@@ -4,7 +4,7 @@ import logo from "../asset/logo.gif";
 
 
 
-const LoginMain=()=>{
+const LoginMain=(props)=>{
 const[flag,setflag]=useState(true)
 let checkedfun=()=>{
 if(flag==true){
@@ -18,6 +18,7 @@ else{
     setflag(true);
 
 }
+
 }
     return(
         <>
@@ -60,7 +61,7 @@ else{
             <div class="fd logBtns">
                 <div class="row">
                     <div class="col-5">
-                        <button id="submitBtn" type="submit" class="btn_1 fd logSubmt" value="Login">Login 
+                        <button id="submitBtn" type="submit" class="btn_1 fd logSubmt" value="Login" onClick={()=>props.loginhandler()}>Login 
                          </button>
                          </div>
                          <div class="col-0"> 

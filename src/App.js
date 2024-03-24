@@ -3,14 +3,18 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import LoginMain from "./login/loginMain"
 import Loading from './loading/loading';
+import Lobby from './lobby/Lobby';
+import MyAccount from './lobby/MyAccount';
 
 function App() {
    const[gbw, setgbw]=useState(2350);
   const[gbh, setgbh]=useState(1250);
   const[cnt, setcnt]=useState(0);
   const[flag, setflag]=useState(true);
+  const[loginmain, setloginmain]=useState();
   useEffect(()=>{
       resize();
+       
   },[cnt])
 
   useEffect(()=>{
@@ -18,6 +22,7 @@ function App() {
   function myGreeting() {
   setflag(false)
 }
+
 },[cnt])
  const resize = () => {
     let windHt;
@@ -48,12 +53,22 @@ function App() {
     let gamewinMargin = (windWd - Math.round(checkWid)) / 2
      gameBox.style.transform = "scale(" + windWd / gbw + "," + windHt / gbh + ")";
 }
+
+const loginhandle=()=>{
+     setloginmain(false);
+
+}
+const loginMainClose=()=>{
+  setloginmain(true);
+
+}
   return (
     <>
       <div id ="gameBox">
          { flag && <Loading/>}
-        <LoginMain/>
-    
+        { loginmain &&<LoginMain loginhandler={loginhandle} />}
+        {!loginmain &&<Lobby loginMainClose={loginMainClose}/>}
+        {/* {<MyAccount/>} */}
       
      </div>
    </>  );

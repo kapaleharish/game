@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="27.5768mm" height="23.9608mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2934 2550"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:yellow;fill-rule:nonzero}
+    .fil2 {fill:white;fill-rule:nonzero}
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="1467.13" y1="2513.47" x2="1467.13" y2="36.0389">
+   <stop offset="0" style="stop-color:#C91212"/>
+   <stop offset="1" style="stop-color:#F54D4D"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="36" y="36" width="2862" height="2477" rx="450" ry="450"/>
+  <path class="fil1" d="M486 0l1961 0c134,0 255,55 344,143 88,88 143,210 143,344l0 1577c0,134 -55,255 -143,344 -88,88 -210,143 -344,143l-1961 0c-134,0 -255,-55 -344,-143 -88,-88 -143,-210 -143,-344l0 -1577c0,-134 55,-255 143,-344 88,-88 210,-143 344,-143zm1961 72l-1961 0c-114,0 -218,47 -293,122 -75,75 -122,179 -122,293l0 1577c0,114 47,218 122,293 75,75 179,122 293,122l1961 0c114,0 218,-47 293,-122 75,-75 122,-179 122,-293l0 -1577c0,-114 -47,-218 -122,-293 -75,-75 -179,-122 -293,-122z"/>
+  <path class="fil2" d="M1962 917l-160 150 -195 194 357 465c18,24 27,46 27,69 0,29 -11,54 -33,75 -22,22 -47,33 -75,33 -28,0 -53,-13 -76,-40 -67,-78 -185,-228 -354,-450l-213 220c-43,39 -106,99 -188,181 -23,27 -49,40 -75,40 -28,0 -52,-11 -74,-33 -21,-22 -32,-47 -32,-75 0,-23 9,-46 27,-69 21,-27 52,-60 95,-98 50,-45 84,-75 99,-92l233 -244 -143 -207c-58,-83 -108,-143 -151,-181 -28,-25 -41,-52 -41,-81 0,-29 10,-55 31,-78 21,-23 44,-34 72,-34 43,0 108,56 195,169l189 262 215 -197c89,-84 149,-150 181,-198 23,-34 51,-52 83,-52 28,0 53,10 75,32 22,21 33,46 33,74 0,40 -34,95 -102,166z"/>
+ </g>
+</svg>

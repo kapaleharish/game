@@ -5,7 +5,7 @@ div#root {
   width: 100%;
   height: 100vh;
   /* background: #000 */
-  background-color: #000;
+  /* background-color: #000; */
 }
 *{
   margin: 0;
@@ -317,4 +317,401 @@ button.windoClose img {
   to {
       transform: translateX(0)
   }
+}
+
+.blk img {
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+.fgaLobby {
+  width: 100%;
+  height: 100%;
+  background-image: url("./asset/lobby_bg.e27bad7f.png");
+  background-color: #8b4513;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+.btn_1.btn_logout, .btn_1.btn_myAcount {
+  background: linear-gradient(0deg, #e70415, #ff6c62);
+  font-size: 45px;
+  width: 200px;
+  border: 1px solid #ff6969;
+  width: 100%;
+  padding: 17px 15px;
+  font-family: Century_Gothic;
+  border-radius: 15px;
+  margin-left: 0;
+  margin-top: -27px;
+  color: #000;
+}
+
+.p_lr_15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.fd {
+  width: 100%;
+  position: relative;
+}
+
+.fd {
+  float: left;
+}
+
+element.style {
+}
+.center_content {
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row .col_h1 {
+  width: 42%;
+}
+ul.box_blk.fd li {
+  list-style: none;
+  float: left;
+  margin-right: 15px;
+  width: 48%;
+}
+
+ul.box_blk.fd li .blk {
+  background: rgb(0 0 0 / 72%);
+  color: #fff;
+  border-radius: 19px;
+  padding: 7px 15px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  font-size: 40px;
+  text-align: left;
+  display: flex;
+  font-family: Century_Gothic;
+  align-items: center;
+}
+.blk img {
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+.row .col_h2 {
+  width: 16%;
+}
+.logo_height {
+  height: 275px;
+}
+
+.row .col_h1 {
+  width: 42%;
+}
+ul.box_btns.fd {
+  display: flex;
+  justify-content: end;
+}
+
+element.style {
+}
+.btn_1.btn_myAcount {
+    background: linear-gradient(#996828, #fbea9a, #996828);
+}
+
+.btn_1.btn_logout, .btn_1.btn_myAcount {
+    background: linear-gradient(0deg, #e70415, #ff6c62);
+    font-size: 45px;
+    width: 200px;
+    border: 1px solid #ff6969;
+    width: 100%;
+    padding: 17px 15px;
+    font-family: Century_Gothic;
+    border-radius: 15px;
+    margin-left: 0;
+    margin-top: -27px;
+    color: #000;
+}
+
+ul.box_btns li {
+  list-style: none;
+  float: right;
+  width: 42%;
+  margin-right: 5px;
+}
+
+.btn_1.btn_logout, .btn_1.btn_myAcount {
+  background: linear-gradient(0deg, #e70415, #ff6c62);
+  font-size: 45px;
+  width: 200px;
+  border: 1px solid #ff6969;
+  width: 100%;
+  padding: 17px 15px;
+  font-family: Century_Gothic;
+  border-radius: 15px;
+  margin-left: 0;
+  margin-top: -27px;
+  color: #000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex, .spDp {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.d-flex {
+  display: flex !important;
+}
+
+.fd.btnsGaMe {
+  display: flex;
+  flex-wrap: wrap;
+  top: 15px;
+}
+
+.col_5_boxes {
+  width: 20%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+}
+.gameOne {
+  width: 350px;
+  transform: scaleY(.9);
+}
+
+.col_5_boxes img {
+  transition: all .5s;
+  width: 100%;
+  padding: 10px;
+}
+.btn_1.btn_myAcount {
+  background: linear-gradient(#996828, #fbea9a, #996828);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.myAccountPop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .5490196078431373);
+}
+
+.Myaccount {
+  width: 90%;
+  height: 90%;
+  border: 3px solid rgb(255 216 0 / 50%);
+  border-radius: 5px;
+  background-color: rgb(0 0 0 / 77%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  border-radius: 30px;
+  padding: 9px;
+  overflow-x: auto;
+}
+
+.Myaccount .tabList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Myaccount button.tabbtnActive {
+  color: #fff700;
+}
+.Myaccount .chipsDiv, .Myaccount .tabList button {
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid rgba(255, 247, 0, .38823529411764707);
+  width: 30%;
+  height: 81px;
+  outline: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #fff;
+  white-space: pre;
+  float: left;
+  font-family: fangsong;
+  font-size: 40px;
+  justify-content: left;
+}
+
+.Myaccount .chipsDiv, .Myaccount .tabList button {
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid rgba(255, 247, 0, .38823529411764707);
+  width: 30%;
+  height: 81px;
+  outline: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #fff;
+  white-space: pre;
+  float: left;
+  font-family: fangsong;
+  font-size: 40px;
+  justify-content: left;
+}
+
+
+.Myaccount .chipsDiv {
+align-items: center;
+}
+
+.chipsDiv img {
+  width: 70px;
+  height: 75px;
+  margin-right: 6px;
+  margin-left: 15px;
+}
+
+
+.Myaccount button.close_2 {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.Myaccount .tabList .close_2 {
+  width: 8%;
+}
+
+.Myaccount .tabContentActive {
+  border-radius: 2px;
+  color: #fff;
+  margin-top: 30px;
+}
+.Myaccount .tabContent, .Myaccount .tabContentActive {
+  width: 100%;
+  float: right;
+  position: relative;
+  height: 97.8%;
+}
+
+.inputTabs {
+  max-width: 850px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.myAccImg, .pointsData {
+  width: 100%;
+}
+.myAccImg {
+  width: 70px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+span.funFx_1 {
+  position: absolute;
+  left: 5%;
+  font-family: ChaparralPro_Regular;
+  font-size: 60px !important;
+  top: 15px;
+  color: #000;
+}
+
+.inputTabs {
+  max-width: 850px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputTabs div {
+  width: 100%;
+}
+
+.inputTabs input {
+  width: 100%;
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: 15px;
+  background: radial-gradient(#dbc8ae, #d9cec0);
+  font-size: 48px;
+  color: #000;
+  font-family: fangsong;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.Myaccount button {
+  font-size: 28px;
+}
+.disableBtn {
+  background: linear-gradient(rgba(131, 41, 11, .611764705882353), rgba(248, 242, 123, .611764705882353)) !important;
+  color: rgba(0, 0, 0, .4196078431372549) !important;
+  cursor: no-drop !important;
+}
+.myaccountClose {
+  background: linear-gradient(#efc130, #cf8200, #efc130);
+  border-radius: 20px;
+  border: 1px solid #a94817;
+  font-size: 50px !important;
+  font-family: Candara;
+  padding: 40px 70px;
+  color: #000;
+}
+
+.inputTabs input {
+  width: 100%;
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: 15px;
+  background: radial-gradient(#dbc8ae, #d9cec0);
+  font-size: 48px;
+  color: #000;
+  font-family: fangsong;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+.fd input {
+   /* background: #fff !important;  */
+  border-radius: 15px !important;
+  color: #000 !important;
+  background: radial-gradient(#dbc8ae, #d9cec0)!important;
+  font-family: fangsong;
+  font-size: 50px;
+  padding: 20px;
+  width: 100% !important;
+  float: left;
+  text-align: center;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.inputTabs input {
+  width: 100%;
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: 15px;
+  background: radial-gradient(#dbc8ae, #d9cec0);
+  font-size: 48px;
+  color: #000;
+  font-family: fangsong;
+  border: none;
+  border-bottom: 2px solid #fff;
 }
