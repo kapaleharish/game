@@ -183,6 +183,10 @@ label.checkBoxLable input {
   left: 130px;
   bottom: 60px;
 }
+.funTarget_chips {
+  margin-top: 120px;
+  width: 140% !important;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -194,6 +198,24 @@ label.checkBoxLable input {
     width: 60%;
     padding-right: 7px;
     padding-left: 7px;
+}
+
+
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 button.btn_1 {
   background: linear-gradient(#83290b, #f8f27b);
@@ -509,6 +531,9 @@ ul.box_btns li {
   bottom: 0;
   top: 0;
   background: rgba(0, 0, 0, .5490196078431373);
+  background-image: url("./asset/lobby_bg.e27bad7f.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .Myaccount {
@@ -551,6 +576,21 @@ ul.box_btns li {
   font-family: fangsong;
   font-size: 40px;
   justify-content: left;
+}
+.Myaccount .chipsDiv {
+  background-color: transparent;
+  opacity: 1;
+  border: 1px solid rgba(255, 247, 0, .38823529411764707);
+  width: 25%;
+  height: 70px;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 2px;
+  color: #fff;
+  white-space: pre;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 .Myaccount .chipsDiv, .Myaccount .tabList button {
@@ -714,4 +754,535 @@ span.funFx_1 {
   font-family: fangsong;
   border: none;
   border-bottom: 2px solid #fff;
+}
+.tabContent {
+  border: 3px solid #000;
+  bottom: 162px;
+  display: none
+}
+.tableData {
+  width: 350px;
+  padding: 5px 5px 5px 20px;
+  margin-top: 2%;
+  font-size: 35px
+}
+
+table.acntPopTable {
+  width: 67%;
+  float: left;
+  font-family: futura_2;
+  font-size: 28px
+}
+
+table.acntPopTable tr th {
+  background: linear-gradient(#d02100, #f15e00, #d02100);
+  border: 2px solid #fff;
+  font-size: 30px;
+  font-family: Century_Gothic
+}
+
+table.acntPopTable tr td,
+table.acntPopTable tr th {
+  height: 35px;
+  width: 207px;
+  padding: 20px;
+  font-weight: 300
+}
+
+table.acntPopTable tr td {
+  background: rgba(0, 0, 0, .781)
+}
+
+thead.acntPopHead {
+  width: 151px !important;
+  height: 200px
+}
+.Myaccount button.tabbtnActive {
+  color: #fff700
+}
+
+.Myaccount .tabbtn:hover {
+  background-color: rgba(3, 18, 37, .1);
+  color: #fbe111
+}
+
+.Myaccount .tabbtn:active {
+  background-color: #682828;
+  color: #000
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+
+.gamePage {
+  width: 100%;
+  float: left;
+  height: 1250px;
+  background-size: 100% 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.target_chips {
+  width: 20%;
+  float: left;
+  z-index: 99;
+}
+
+
+.ftt_handIdCls {
+  font-family: Arial;
+  margin-left: 20px;
+}
+.font_20 {
+  font-size: 20px;
+}
+.p_5 {
+  padding: 5px;
+}
+
+.funTarget_chips {
+  margin-top: 120px;
+  width: 140% !important;
+}
+
+.funTarget_chips .col-4 {
+  margin-top: 8vh;
+}
+.text-center {
+  text-align: center;
+}
+
+.col-4.Select img {
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px 10px rgb(255 255 255)!important;
+}
+img.ftt_chp_img {
+  width: 100px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-left: -30px;
+}
+
+.target_table {
+  width: 60%;
+  float: left;
+}
+
+.trgeImg_timer {
+  animation: trgtBdr .4s infinite;
+  width: 1100px;
+  height: 130px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.wheelBox_1_ftt {
+  float: left;
+  width: 100%;
+  position: relative;
+  transform: scale(1.3, 1.07);
+  right: 20px;
+  top: 20px;
+}
+
+.m_t_10 {
+  margin-top: 10px;
+}
+
+img.jack_1 {
+  width: 209px;
+  height: 204px;
+  position: absolute;
+  top: 279px;
+  left: 624px;
+  z-index: 1200;
+}
+
+.ftt_betXiMG, .ftt_overallBox {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.ftt_overallBox {
+  width: 204px;
+  height: 199px;
+  top: 282px !important;
+  left: 626px;
+  display: block;
+}
+
+.ftt_mainTrans {
+  width: 1980px;
+  height: 230px;
+  left: 0;
+  top: 100px;
+  margin: -20px auto auto -10px;
+}
+
+.ftt_mainTrans img {
+  width: 220px;
+  height: 240px;
+  padding: 0;
+}
+
+.ftt_wheelAnimOne {
+  width: 681PX;
+  height: 600PX;
+  margin: auto;
+  left: 60px;
+  right: 12px;
+  top: 35px;
+  position: absolute;
+  z-index: 0;
+}
+
+.ftt_wheelAnim {
+  position: relative;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.ftt_wheelAnim img {
+  width: 100%;
+}
+
+.ftt_wheelBorder {
+  margin: auto;
+  position: relative;
+  z-index: 9;
+  width: 728px;
+}
+.ftt_wheelBorder img{
+  width: 769px;
+  height: 835px;
+}
+
+.FTT_Close {
+  margin-right: 30px;
+  margin-top: 20px;
+  width: 105px;
+  height: 95px;
+  float: right
+}
+.target_btns {
+  width: 20%;
+  float: left;
+  margin-left: -10px
+}
+.FTT_Close button {
+  all: unset;
+  cursor: pointer;
+  z-index: 1000;
+  position: relative
+}
+
+.ftt_userLbl {
+  background: rgba(0, 0, 0, .6588235294117647);
+  border-radius: 20px;
+  padding: 5px;
+  width: 400px;
+  margin-bottom: 10px;
+  color: #fff;
+  border: 1px solid hsla(0, 0%, 100%, .21176470588235294);
+  font-size: 40px;
+  display: flex;
+  height: 70px;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Century_Gothic;
+  float: right;
+  margin-top: 30px
+}
+.ftt_userLbl img {
+  height: 60px;
+  /* background-color: white; */
+  
+}
+.m_b_15 {
+  margin-bottom: 15px
+}
+.funTargetWinImg {
+  position: absolute;
+  left: -65px;
+  top: 65px
+}
+.funTargetCover {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: 300
+}
+.timer_SecFTT {
+  top: 30px;
+  width: 220px !important;
+  height: 220px;
+  background: url("./asset//timer_1.e104f93f.png") no-repeat;
+  background-position: -25px -25px;
+  background-size: 240px;
+  transform: scaleX(1.1);
+  text-align: center;
+  font-size: 75px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  font-family: Century_Gothic_B;
+  margin-right: 50px;
+  border: 14px solid transparent;
+  border-radius: 50%
+}
+span#timeSpan {
+  z-index: 99
+}
+.funTrgtTBoard {
+  width: 130%;
+  float: left;
+  border: 4px solid rgb(177 147 0/88%);
+  border-radius: 15px;
+  background-color: rgb(0 0 0/17%);
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding: 25px 10px;
+  left: -33%;
+  position: relative;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Maiandra_GD
+}
+.m_t_5 {
+  margin-top: 5px
+}
+.ftt_HistoryTbl {
+  width: 130%;
+  height: 150px;
+  left: -33%;
+  table-layout: fixed;
+  font-size: 16px;
+  margin-top: 25px;
+  float: left;
+  position: relative
+}
+
+.ftt_HistoryTbl tr td {
+  color: #fff;
+  background: linear-gradient(#e4100f, #571417);
+  text-align: center;
+  padding: 15px 1px;
+  border: 1px solid #fff;
+  font-size: 35px
+}
+
+.bottomFixFuntarget {
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 915px;
+  width: 100%;
+}
+
+.fd.fun_trg_timer_btns.p_lr_10.gothic_1 {
+  margin-top: -10px;
+}
+.p_lr_10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ftt_leftPanl {
+  width: 36%;
+  display: flex;
+  float: left;
+  font-family: "Century_Gothic_B";
+  margin-left: 10px;
+}
+
+.fl_1 {
+  padding: 0 5px;
+  flex: 1 1;
+}
+
+
+.funBal {
+  background: #870000;
+  text-align: center;
+  color: #fff;
+  padding: 1px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.fun_trg_timer_btns .funBal div:first-child, .fun_trg_timer_btns .funBal div:nth-child(2) {
+  padding: 15px 0 !important;
+}
+.funBal div:first-child {
+  background: linear-gradient(#830000, #580000);
+  padding: 15px 0;
+}
+.fun_trg_timer_btns .funBal div:nth-child(2) {
+  padding: 15px 0 !important;
+}
+.funBal div:nth-child(2) {
+  background: #210000;
+  padding: 8px 0;
+}
+
+.fl_1 {
+  padding: 0 5px;
+  flex: 1 1;
+} 
+
+.funBal {
+  background: #870000;
+  text-align: center;
+  color: #fff;
+  padding: 1px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+.fun_trg_timer_btns .funBal div:first-child, .fun_trg_timer_btns .funBal div:nth-child(2) {
+    padding: 15px 0 !important;
+}
+
+.funBal div:first-child {
+    background: linear-gradient(#830000, #580000);
+    padding: 15px 0;
+}
+
+.ftt_btnPanel {
+  width: 38%;
+  float: right;
+  display: flex;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.fl_1 {
+  padding: 0 5px;
+  flex: 1 1;
+}
+button.fd.ar_bt_1:disabled {
+  opacity: .5;
+  cursor: no-drop;
+}
+
+
+.ar_bt_1 {
+  background: linear-gradient(#c72722, #b11815, #840101, #960000, #ae0000);
+  border: none;
+  color: #fff;
+  padding: 18px 20px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 35px;
+  border: 3px solid rgba(255, 133, 133, .4117647058823529);
+  font-family: Century_Gothic_B;
+}
+
+.FGAfunTargetTimerBetPanel {
+  width: 100%;
+  position: absolute;
+  float: left;
+  display: flex;
+  margin-top: 20px;
+}
+
+.funTTBet {
+  flex: 1 1;
+  padding: 0 0.5vh;
+  font-size: 18px;
+  font-weight: 700;
+  transform: scaleY(1.1);
+}
+
+.FGAfunTargetTimerBetPanel .buttonZero {
+  float: left;
+  background: linear-gradient(#0d0d0d, #fff, #0d0d0d, #fff, #0d0d0d);
+  flex: 1 1;
+  text-align: center;
+  border-radius: 100%;
+  height: 160px;
+  padding: 6px;
+  overflow: hidden;
+  width: 170px;
+  margin-left: 25px;
+}
+.FGAfunTargetTimerBetPanel .buttonZero .buttonOneBg, .FGAfunTargetTimerBetPanel .buttonZero .buttonZeroBg {
+  background: linear-gradient(#94c222 45%, #6a8d16 50%);
+  height: 100%;
+  border-radius: 50%;
+}
+
+.FGAfunTargetTimerBetPanel .buttonZero .buttonZeroBg {
+  font-family: Century_Gothic;
+}
+
+.funTTBet .valueOne {
+  font-size: 70px;
+}
+.funTTBet .valueOne, .funTTBet .valueTwo {
+  height: 50%;
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  color: #000;
+}
+
+.funTTBet .valueTwo {
+  font-size: 35px;
+  color: #fff;
+  justify-content: flex-start;
+  margin-top: 5px;
+  font-family: "verdana";
+}
+.funTTBet .valueOne, .funTTBet .valueTwo {
+  height: 50%;
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  color: #000;
+}
+.trgeImg {
+  animation: trgtBdr .4s infinite
+}
+
+@keyframes trgtBdr {
+  0% {
+      border: 5px dotted red
+  }
+  50% {
+      border: 5px dotted #ff0
+  }
+  to {
+      border: 5px dotted red
+  }
+}
+.FTT_Close button #close_img{
+  height: 80px;
+  width: 80px;
 }

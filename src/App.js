@@ -5,6 +5,7 @@ import LoginMain from "./login/loginMain"
 import Loading from './loading/loading';
 import Lobby from './lobby/Lobby';
 import MyAccount from './lobby/MyAccount';
+import FunTargetTimer from './games/FunTargetTimer';
 
 function App() {
    const[gbw, setgbw]=useState(2350);
@@ -66,9 +67,10 @@ const loginMainClose=()=>{
     <>
       <div id ="gameBox">
          { flag && <Loading/>}
-        { loginmain &&<LoginMain loginhandler={loginhandle} />}
-        {!loginmain &&<Lobby loginMainClose={loginMainClose}/>}
+        {/* { loginmain &&<LoginMain loginhandler={loginhandle} />}
+        {!loginmain &&<Lobby loginMainClose={loginMainClose}/>} */}
         {/* {<MyAccount/>} */}
+        {<FunTargetTimer/>}
       
      </div>
    </>  );
