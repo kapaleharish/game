@@ -6,13 +6,16 @@ import Loading from './loading/loading';
 import Lobby from './lobby/Lobby';
 import MyAccount from './lobby/MyAccount';
 import FunTargetTimer from './games/FunTargetTimer';
+import Loader from './loading/loader';
 
 function App() {
    const[gbw, setgbw]=useState(2350);
   const[gbh, setgbh]=useState(1250);
   const[cnt, setcnt]=useState(0);
   const[flag, setflag]=useState(true);
-  const[loginmain, setloginmain]=useState();
+  const[loginmain, setloginmain]=useState(true);
+  
+  const[funTargetTmer, setfunTargetTmer]=useState(false);
   useEffect(()=>{
       resize();
        
@@ -61,16 +64,22 @@ const loginhandle=()=>{
 }
 const loginMainClose=()=>{
   setloginmain(true);
-
+}
+const funTargetTmerHandle=()=>{
+  if(setfunTargetTmer===false)
+  setfunTargetTmer(true);
+  if(setfunTargetTmer===true)
+  setfunTargetTmer(false);
 }
   return (
     <>
       <div id ="gameBox">
+      {/* {flag && <Loader/>} */}
          { flag && <Loading/>}
-        {/* { loginmain &&<LoginMain loginhandler={loginhandle} />}
-        {!loginmain &&<Lobby loginMainClose={loginMainClose}/>} */}
-        {/* {<MyAccount/>} */}
-        {<FunTargetTimer/>}
+         { loginmain &&<LoginMain loginhandler={loginhandle} />}
+        {!loginmain &&<Lobby loginMainClose={loginMainClose} />} 
+         
+         { funTargetTmer &&<FunTargetTimer />} 
       
      </div>
    </>  );

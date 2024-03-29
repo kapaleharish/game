@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../App.css"
 import logo from "../asset/logo.gif";
+import Errorpopup from "./Errorpopup";
 
 
 
 const LoginMain=(props)=>{
-const[flag,setflag]=useState(true)
+const[flag,setflag]=useState(true);
+const[username,setusername]=useState("");
+const[errorpopup,seterrorpopup]=useState(false);
+const[usernamevalue,setusernamevalue]=useState("");
+
+
+
+let usernameHandler=(e)=>{
+    setusername(e.target.value);
+}
+let loginHandle=()=>{
+    username==="error"?seterrorpopup(true):seterrorpopup(false);
+    console.log(username + "  "+errorpopup)
+    // setusernamevalue(username);
+    //  !errorpopup && props.loginhandler();
+    username!="error" && props.loginhandler();
+}
 let checkedfun=()=>{
 if(flag==true){
     document.getElementsByClassName("chBox")[0].style.display="block";
@@ -22,6 +39,7 @@ else{
 }
     return(
         <>
+        {errorpopup&&<Errorpopup seterrorpopup={seterrorpopup}/>}
         <div className="fgaLoginMain">
         <div className="loginMain">
         <button id="closeBtn" className="windoClose">
@@ -43,7 +61,7 @@ else{
         <div class="fd df">
             <label class="fieldLabel" id="username" for="userName" style={{fontSize: "60px"}}> Username </label>
             <span class="funFx"> FUN </span>
-            <input minlength="9" maxlength="9"  pattern="^[0-9]*$" inputMode="numeric" name="username" placeholder="Username" id="fgaUserName" autocomplete="off"   style={{fontSize: "50px"}}></input>
+            <input minlength="9" maxlength="9" onChange={usernameHandler} pattern="^[0-9]*$" inputMode="numeric" name="username" placeholder="Username" id="fgaUserName" autocomplete="off"   style={{fontSize: "50px"}}></input>
             </div>
             <div class="fd df m_t_15">
                 <label class="fieldLabel" id="password" for="password" style={{fontSize: "60px"}}>
@@ -61,7 +79,7 @@ else{
             <div class="fd logBtns">
                 <div class="row">
                     <div class="col-5">
-                        <button id="submitBtn" type="submit" class="btn_1 fd logSubmt" value="Login" onClick={()=>props.loginhandler()}>Login 
+                        <button id="submitBtn" type="submit" class="btn_1 fd logSubmt" value="Login" onClick={()=>{loginHandle()}}>Login 
                          </button>
                          </div>
                          <div class="col-0"> 

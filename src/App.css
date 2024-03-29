@@ -1286,3 +1286,128 @@ button.fd.ar_bt_1:disabled {
   height: 80px;
   width: 80px;
 }
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.popupWin .pop_text {
+  max-width: 600px;
+  background: #574f46;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 35px;
+  font-family: fangsong;
+  bottom: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid #000;
+}
+
+
+.font_30 {
+  font-size: 30px;
+}
+
+.clr_00 {
+  color: #000;
+  color: var(--clr_00);
+}
+
+.clr_b9 {
+  color: #b9b9b9;
+}
+
+.m_t_10 {
+  margin-top: 10px;
+}
+
+.forcelogin_bt_1 {
+  font-size: 26px;
+  border: none;
+  background: transparent;
+  font-family: "ChaparralPro_Regular";
+  color: #000;
+}
+.m_t_20 {
+  margin-top: 20px;
+}
+
+
+.popupWin.block {
+  display: block;
+  z-index: 99;
+}
+
+.popupWin {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1500;
+  background: rgba(34, 29, 29, .8);
+}
+.loaderCount {
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  padding-top: 15px;
+  margin-top: 150px;
+}
+.loaderCover_Box1 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #ffc400;
+  position: fixed;
+  z-index: 1000000;
+  background: url("./asset/loading.gif"); 
+  background-color: rgba(122, 0, 0, 0.941);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+.loader_1 .loaderImg {
+  width: 600px;
+  text-align: center;
+  margin: auto
+}
+
+.loader_1 .loaderImg img {
+  width: 100%
+}
+
+.loader_1 .loaderImg {
+  width: 500px;
+  text-align: center;
+  margin: auto
+}
+
+.loader_1 .loaderImg img {
+  width: 100%
+}
+.loader_1 {
+  width: 700px;
+  margin: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: -400px;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0
+}
