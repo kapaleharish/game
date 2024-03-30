@@ -1411,3 +1411,63 @@ button.fd.ar_bt_1:disabled {
   left: 0;
   right: 0
 }
+.popupWin2{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1500;
+  background: rgba(34, 29, 29, 0.932);
+}
+.popupWin2 .pop_text2 {
+  max-width: 600px;
+  background: #574f46;
+  /* text-align: center; */
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 35px;
+  font-family: fangsong;
+  bottom: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid #000;
+}
+#popupWin2  .poptext2{
+  background: #1b1b1b !important;
+  /* align-items:flex-start !important; */
+
+}
+.poptext2 .text{
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Arial;
+  text-align: left;
+  padding: 8px;
+}
+.fd .okbtn{
+background-color: white;
+color: black;
+margin: 20px 20px;
+padding: 10px;
+border-radius: 5px;
+font-weight: 500;
+font-size: 35px;
+font-family: Arial;
+width: 80px;
+}
+.fd .cancelbtn{
+  background-color: white;
+  font-family: Arial;
+  color: black;
+  margin: 20px 20px;
+padding: 10px;
+border-radius: 5px;
+font-weight: 500;
+font-size: 35px;
+}

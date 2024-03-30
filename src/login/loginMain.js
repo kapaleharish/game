@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../App.css"
 import logo from "../asset/logo.gif";
 import Errorpopup from "./Errorpopup";
+import Errorpopup2 from "./Errorpopup2";
 
 
 
@@ -39,7 +40,9 @@ else{
 }
     return(
         <>
-        {errorpopup&&<Errorpopup seterrorpopup={seterrorpopup}/>}
+       
+        {/* {errorpopup&&<Errorpopup seterrorpopup={seterrorpopup}/>} */}
+        {errorpopup&&<Errorpopup2 seterrorpopup={seterrorpopup}/>}
         <div className="fgaLoginMain">
         <div className="loginMain">
         <button id="closeBtn" className="windoClose">
